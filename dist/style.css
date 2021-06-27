@@ -21,13 +21,14 @@ body {
     padding-right: 7vw;
 }
 
-#mainContainer {
+#home {
     height: 80%;
     background-image: url('https://images.unsplash.com/photo-1558030006-450675393462?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2089&q=80');
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    z-index: 0;
+    z-index: 5;
     position: relative;
+    display: flex;
 }
 
 #footer {
@@ -80,6 +81,7 @@ footer {
     background-color: rgb(248, 248, 248);
     display: flex;
     justify-content: center;
+    display: none;
 }
 
 form {
@@ -111,10 +113,11 @@ iframe {
     transform: translate(0%, -50%);
     height: 80%;
     width: 100%;
-    z-index: -2;
+    z-index: -4;
     background-color: rgb(248, 248, 248);
     display: flex;
     justify-content: center;
+    display: none;
 }
 
 #menuContainer {
