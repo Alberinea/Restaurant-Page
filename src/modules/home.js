@@ -11,6 +11,7 @@ function createMain() {
     order.setAttribute('id', 'order');
     text.textContent = 'Order Now'
     text.style.cursor = 'pointer'
+    text.id = 'orderText'
 }
 
 export default createMain

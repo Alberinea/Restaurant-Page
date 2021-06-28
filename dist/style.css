@@ -18,21 +18,23 @@ body {
 
 .headerSub {
     cursor: pointer;
-    padding-right: 7vw;
+    margin-right: 7vw;
+}
+
+.headerSub:hover {
+    text-decoration: underline;
 }
 
 #home {
-    height: 80%;
-    background-image: url('https://images.unsplash.com/photo-1558030006-450675393462?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2089&q=80');
+    flex: 1 1 0;
+    background-image: url('/src/assets/bg.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    z-index: 5;
     position: relative;
     display: flex;
 }
 
 #footer {
-    flex: 1 1 0;
     background-color: rgb(26, 25, 25);
 }
 
@@ -49,6 +51,8 @@ body {
     width: 60vh;
     border: 0.5vh white solid;
     font-size: 7vh;
+    user-select: none;
+    backdrop-filter: blur(5px);
 }
 
 #order {
@@ -61,7 +65,7 @@ body {
 }
 
 footer {
-    height: 10%;
+    height: 5%;
     width: 100%;
     position: fixed;
     bottom: 0;
@@ -72,12 +76,7 @@ footer {
 }
 
 #contract {
-    position: absolute;
-    top: 50%;
-    transform: translate(0%, -50%);
-    height: 80%;
-    width: 100%;
-    z-index: -3;
+    flex: 1 1 0;
     background-color: rgb(248, 248, 248);
     display: flex;
     justify-content: center;
@@ -86,7 +85,7 @@ footer {
 
 form {
     height: 100%;
-    width: 50%;
+    width: 35%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -95,7 +94,7 @@ form {
 }
 
 #map {
-    width: 50%;
+    width: 35%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -108,12 +107,8 @@ iframe {
 }
 
 #menu {
-    position: absolute;
-    top: 50%;
-    transform: translate(0%, -50%);
-    height: 80%;
+    flex: 1 1 0;
     width: 100%;
-    z-index: -4;
     background-color: rgb(248, 248, 248);
     display: flex;
     justify-content: center;
@@ -126,8 +121,8 @@ iframe {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    padding-top: 3vh;
 }
-
 
 .pic {
     margin-top: 5vh;
@@ -145,25 +140,25 @@ iframe {
 }
 
 #rib-eye {
-    background-image: url('https://st2.depositphotos.com/2287637/7818/i/600/depositphotos_78184718-stock-photo-grilled-steak-ribeye-with-french.jpg');
+    background-image: url('/src/assets/steak1.jpg');
 }
 
 #t-bone {
-    background-image: url('https://media.istockphoto.com/photos/grilled-tbone-steak-with-roasted-potato-wedges-picture-id513492634?k=6&m=513492634&s=612x612&w=0&h=aq560s8QX1uxz8zLlGFRWp4ap579JYfGAU252PlsFE0=');
+    background-image: url('/src/assets/steak2.jpg');
 }
 
 #sirloin {
-    background-image: url('https://media.istockphoto.com/photos/grilled-striploin-steak-picture-id535786572?k=6&m=535786572&s=612x612&w=0&h=u2gbrJUC4lClKD8eZYwgh5C5TVxNtGwum7D0iiO_knM=');
+    background-image: url('/src/assets/steak3.jpg');
 }
 
 #tenderloin {
-    background-image: url('https://tmbidigitalassetsazure.blob.core.windows.net/rms3-prod/attachments/37/1200x1200/Tenderloin-Steak-Diane_exps91317_SD142780D08_15_6bC_RMS.jpg');
+    background-image: url('/src/assets/steak4.jpg');
 }
 
 label,
 input {
     margin-top: 10px;
-    width: 500px;
+    width: 40vh;
     padding: 5px;
 }
 
@@ -174,4 +169,16 @@ input {
     border-radius: 5px;
     width: 150px;
     cursor: pointer;
+}
+
+#messageText {
+    height: 10vh;
+    padding-left: 5px;
+}
+
+textarea {
+    width: 40vh;
+    resize: vertical;
+    padding: 10px 0 0 5px;
+    font-size: 1rem;
 }

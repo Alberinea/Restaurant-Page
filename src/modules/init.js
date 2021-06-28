@@ -14,7 +14,7 @@ function elementFactory(parentCla, type, childCla, num, arrID = []) {
         const element = document.querySelectorAll(parentCla)[i].appendChild(document.createElement(type));
         element.setAttribute('class', childCla);
         element.setAttribute('id', arrID[i]);
-        element.textContent = arrID[i]
+        if (element.className != 'pic') element.textContent = arrID[i];
     }
 }
 
@@ -35,6 +35,5 @@ function createFooter() {
     footer.setAttribute('id', 'footer');
     footer.textContent = 'copyright © 1874 - 2021 Voidforge LLC. All Rights Reserved.';
 }
-
 
 export { elementLoop, elementFactory, createHeader, createFooter };
