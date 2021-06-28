@@ -27,7 +27,7 @@ body {
 
 #home {
     flex: 1 1 0;
-    background-image: url('/src/assets/bg.jpg');
+    background-image: url('./assets/bg.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     position: relative;
@@ -140,19 +140,19 @@ iframe {
 }
 
 #rib-eye {
-    background-image: url('/src/assets/steak1.jpg');
+    background-image: url('./assets/steak1.jpg');
 }
 
 #t-bone {
-    background-image: url('/src/assets/steak2.jpg');
+    background-image: url('./assets/steak2.jpg');
 }
 
 #sirloin {
-    background-image: url('/src/assets/steak3.jpg');
+    background-image: url('./assets/steak3.jpg');
 }
 
 #tenderloin {
-    background-image: url('/src/assets/steak4.jpg');
+    background-image: url('./assets/steak4.jpg');
 }
 
 label,
